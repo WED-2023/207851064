@@ -52,7 +52,7 @@
         <button onclick="alert('Thank you for liking my page!')">Like</button>
     </section>
 
-    <section id="qr">
+<section id="qr">
         <h2>QR Code</h2>
         <img src="https://wed-2023.github.io/207851064/?name=Naveh+Gershoni&email=naveh231g%40gmail.com&message=%D7%A2%D7%9B%D7%92#contact" alt="QR Code">
     </section>
@@ -75,27 +75,29 @@
     <section id="contact">
         <h2>Contact Me</h2>
         <form>
-onsubmit="sendEmail(event)">
-        <label>Email:</label><br>
-        <input type="email" id="email" required><br>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
 
-        <label>Message:</label><br>
-        <textarea id="message" rows="5" required></textarea><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
 
-        <label>Choose a Smiley:</label><br>
-        <select id="smiley">
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+
+            <label>Choose a Smiley:</label><br>
+            <select id="smiley">
             <option value="🙂">🙂 Happy</option>
             <option value="😢">😢 Sad</option>
             <option value="😎">😎 Cool</option>
             <option value="❤️">❤️ Love</option>
-        </select><br>
+            </select><br>
 
-        <button type="submit">Send</button>
+            <button type="submit">Send</button>
         </form>
     </section>
 
     <footer>
-        <p>© 2025 Margaret Green</p>
+        <p>© 2025 Ofra Rosman </p>
     </footer>
 
 </body>
