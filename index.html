@@ -1,193 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margaret Green</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
-</div>
-		  
-<section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
-</section>
 
-<section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
-</section>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#photos">My Photos</a></li>
+            <li><a href="#playlist">My Playlist</a></li>
+            <li><a href="#like">Like</a></li>
+            <li><a href="#qr">QR Code</a></li>
+            <li><a href="#qa">Q&A</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
 
-<section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
-</section>
+    <header>
+        <h1>Margaret Green</h1>
+        <p>Welcome to my personal page!</p>
+    </header>
 
-<section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is Margaret Green. I am 72 years old and I live in London. I love singing, cooking, traveling, and photography. I enjoy spending time with my family and friends, and I always try to learn new things.</p>
+    </section>
 
-<section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="photos">
+        <h2>My Photos</h2>
+        <img src="https://via.placeholder.com/300x200" alt="Photo 1">
+        <img src="https://via.placeholder.com/300x200" alt="Photo 2">
+        <img src="https://via.placeholder.com/300x200" alt="Photo 3">
+    </section>
 
-<section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="playlist">
+        <h2>My Playlist</h2>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=3JWTaaS7LdU" target="_blank">Whitney Houston - I Will Always Love You</a></li>
+            <li><a href="https://www.youtube.com/watch?v=Zi_XLOBDo_Y" target="_blank">Michael Jackson - Billie Jean</a></li>
+            <li><a href="https://www.youtube.com/watch?v=fLexgOxsZu0" target="_blank">Bruno Mars - Treasure</a></li>
+        </ul>
+    </section>
 
-<section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
+    <section id="like">
+        <h2>Like My Page</h2>
+        <button onclick="alert('Thank you for liking my page!')">Like</button>
+    </section>
 
+    <section id="qr">
+        <h2>QR Code</h2>
+        <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://www.facebook.com/margaret.green&size=150x150" alt="QR Code">
+    </section>
 
-<script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+    <section id="qa">
+        <h2>Q&A</h2>
+        <h3>Where were you born?</h3>
+        <p>I was born in Manchester, England.</p>
+
+        <h3>What is your favorite hobby?</h3>
+        <p>My favorite hobby is singing.</p>
+
+        <h3>What do you love most about life?</h3>
+        <p>Spending time with my family and discovering new places.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br><br>
+
+            <input type="submit" value="Send">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Margaret Green</p>
+    </footer>
+
 </body>
 </html>
