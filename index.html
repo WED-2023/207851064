@@ -69,29 +69,44 @@
 </p>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br><br>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message"></textarea><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
 
-            <label>Choose a Smiley:</label><br>
-            <select id="smiley">
+        <label>Choose a Smiley:</label><br>
+        <select id="smiley">
             <option value="🙂">🙂 Happy</option>
             <option value="😢">😢 Sad</option>
             <option value="😎">😎 Cool</option>
             <option value="❤️">❤️ Love</option>
-            </select><br>
+        </select><br><br>
 
-            <button type="submit">Send</button>
-        </form>
-    </section>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let message = document.getElementById('message').value;
+    let smiley = document.getElementById('smiley').value;
+
+    let mailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=navehg@post.bgu.ac.il&su=New+Message+From+${name}&body=Name: ${name}%0AEmail: ${email}%0AMessage: ${message} ${smiley}`;
+
+    window.open(mailLink, '_blank');
+});
+</script>
 
     <footer>
         <p>© 2025 Ofra Rosman </p>
