@@ -11,7 +11,7 @@ Files:
     - My Photos gallery
     - My Playlist (YouTube links)
     - Like button with JavaScript alert
-    - QR Code (Facebook link && Website link)
+    - QR Code (Website link)
     - Q&A section
     - Contact Me form
 
