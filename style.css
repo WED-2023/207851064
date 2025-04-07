@@ -80,14 +80,14 @@ footer {
 #qr {
             text-align: center;
             background-color: #e8f5e9;
-            padding: 40px;
+            padding: 10px;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
         }
 
 #qr h2 {
-            font-size: 24px;
+            font-size: 10px;
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
