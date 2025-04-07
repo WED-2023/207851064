@@ -45,9 +45,20 @@
     </section>
 
     <section id="like">
-        <h2>Like My Page</h2>
-        <button onclick="alert('Thank you for liking my page!')">Like</button>
-    </section>
+    <h2>Like My Page</h2>
+    <button onclick="addLike()">Like ❤️</button>
+    <span id="likeCount">0</span> Likes
+</section>
+
+<script>
+    let likeCount = 0;
+
+    function addLike() {
+        likeCount++;
+        document.getElementById('likeCount').innerText = likeCount;
+        alert('Thank you for liking my page!');
+    }
+</script>
 
 <section id="qr">
         <h2>Website QR Code</h2>
